@@ -36,20 +36,3 @@ contract MyToken {
     }
     }
 }
-This Solidity contract defines a simple token named "MyToken" with basic minting and burning functionality.
-In this code i have made these parts:
-Public Variables:
-
-Token_Name: Stores the name of the token, "ABC".
-Token_Abbrv: Stores the abbreviation of the token, "AB".
-Total_Supply: Stores the total supply of the token, initialized to 0.
-Mapping:
-
-Balance: Maps addresses to their respective token balances.
-Mint Function:
-
-Mint(address _address, uint _number): Increases the Total_Supply by _number and adds the same amount to the balance of _address.
-Burn Function:
-
-Burn(address _address, uint _number): If _address has a balance greater than or equal to _number, it decreases the Total_Supply and the balance of _address by _number.
-This contract allows the creation (minting) and destruction (burning) of tokens while keeping track of the total supply and individual balances.
